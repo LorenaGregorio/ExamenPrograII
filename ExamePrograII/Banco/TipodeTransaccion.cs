@@ -8,5 +8,6 @@ namespace ExamePrograII.Banco
 {
     public class TipodeTransaccion 
     {
+        public string NombredelaTransaccion { get; set; }
     }
 }

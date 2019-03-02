@@ -8,6 +8,13 @@ namespace ExamePrograII.Banco
 {
     public class ClienteTerceraEdad : Cliente
     {
+        private static string cucho;
+        public ClienteTerceraEdad(string tipodeCliente, string fechadeCita, string tipodeTransaccion) : base(tipodeCliente, fechadeCita, tipodeTransaccion)
+        {
+
+        }
+        static ClienteTerceraEdad() => cucho = "Persona mayor de 60 años";
+
         public string TipodePrioridadClienteTercera { get; set; }
     }
 }

@@ -8,6 +8,16 @@ namespace ExamePrograII.Banco
 {
     public class ClienteEspecial : Cliente
     {
+        private static string DiscapacidadEspecial;
+        public ClienteEspecial(string tipodeCliente, string fechadeCita, string tipodeTransaccion) : base(tipodeCliente, fechadeCita, tipodeTransaccion)
+        {
+
+        }
+        static ClienteEspecial() => DiscapacidadEspecial = "Sordomudo";
+
+       
+
+
         public string TipodePrioridadClienteEspecial { get; set; }
     }
 }

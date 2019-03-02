@@ -8,14 +8,26 @@ namespace ExamePrograII.Banco
 {
     public class Cliente
     {
-        public string NombredeCliente { get; set; }
 
-        public string TipodeCliente { get; set; }
+        private string tipoCliente;
+        private string fechadeCita;
+        private string tipodeTransaccion;
 
-        public string FechadeCita { get; set; }
+        public Cliente(string tipoCliente, string fechadeCita, string tipodeTransaccion)
+        {
+            tipoCliente = tipoCliente;
+            fechadeCita = fechadeCita;
+            tipodeTransaccion = tipodeTransaccion;
+        }
 
-        public string TipodeTransaccion { get; set; }
+        //public string TipodeCliente { get; set; }
 
-       
+        //public string FechadeCita { get; set; }
+
+        //public string TipodeTransaccion { get; set; }
+
     }
+
+
+
 }
